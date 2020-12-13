@@ -28,9 +28,7 @@ class CreateUsers extends Component {
             .then(res => {
                 console.log(res.data);
             })
-            .catch(err => {
-                console.log(err);
-            });
+            .catch(err => console.log(err));
 
         this.setState({username: ''});
     }

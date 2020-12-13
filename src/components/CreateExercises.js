@@ -22,13 +22,11 @@ class CreateExercises extends Component {
                 if (res.data.length > 0) {
                     this.setState({
                         users: res.data.map(user => user.username),
-                        username: res.data[0].username
+                        username: res.data[0]
                     });
                 }
             })
-            .catch(err => {
-                console.log(err);
-            });
+            .catch(err => console.log(err));
     }
 
     onChangeUsername = (event) => {
@@ -70,9 +68,7 @@ class CreateExercises extends Component {
             .then(res => {
                 console.log(res.data);
             })
-            .catch(err => {
-                console.log(err);
-            });
+            .catch(err => console.log(err));
 
         window.location = '/';
     }
