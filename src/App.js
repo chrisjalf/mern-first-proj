@@ -5,16 +5,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import ExercisesList from './components/ExercisesList';
 import EditExercise from './components/EditExercises';
-import CreateExercise from './components/CreateExercise';
-import CreateUser from './components/CreateUser';
+import CreateExercise from './components/CreateExercises';
+import CreateUser from './components/CreateUsers';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Navbar />
+        <br/>
         <div className="container">
-          <Navbar />
-          <br/>
           <Route path="/create" component={CreateExercise} />
           <Route path="/user" component={CreateUser} />
           <Route path="/edit/:id" component={EditExercise} />
