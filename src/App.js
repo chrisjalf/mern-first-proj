@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './components/Navbar';
 import ExercisesList from './components/ExercisesList';
-import EditExercise from './components/EditExercise';
+import EditExercise from './components/EditExercises';
 import CreateExercise from './components/CreateExercise';
 import CreateUser from './components/CreateUser';
 

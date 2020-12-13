@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class CreateExercise extends Component {
+class EditExercises extends Component {
     render() {
         return (
             <div>
-                <p>You are on Create Exercise Component</p>
+                <p>You are on Edit Exercises Component</p>
             </div>
         );
     }
 }
 
-export default CreateExercise;
+export default EditExercises;
